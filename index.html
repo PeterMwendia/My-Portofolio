@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2e2e2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            /* max-width: 100%; */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project {
+            border: 1px solid #adadad;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .project h2 {
+            margin-top: 0;
+        }
+
+        .project p {
+            margin-bottom: 0;
+        }
+
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills h3 {
+            margin-top: 0;
+        }
+
+        .skills ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills li {
+            margin: 5px;
+            padding: 10px;
+            background-color: #d8e704;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .contact {
+            /* border: 1px solid #adadad; */
+            margin-top: 40px;
+        }
+
+        .contact h3 {
+            margin-top: 0;
+        }
+
+        .contact p {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e6e6e6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .dark-mode {
+            background-color: #222;
+        }
+
+        .hero-text {
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        .hero-text p {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #222;
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#repositories">Repositories</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section class="hero dark-mode">
+            <div class="hero-text">
+                <h1>Hi there &#x1F44B;, I'm Peter Mwendia</h1>
+                <p>Software Engineer | Web Developer | Tech Enthusiast | Database Engineer | iOS and Android Developer
+                </p>
+                <a href="#projects" class="btn">View my work</a>
+            </div>
+        </section>
+        <div class="container">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Neural Networks</h3>
+                    <p>I have created a Neural Network training model which is in progress...</p>
+                    <a href="https://github.com/PeterMwendia/Neural-Network">View on GitHub</a>
+                </div>
+            </section>
+            <section id="repositories">
+                <h2>Major Repositories</h2>
+
+                <div class="project">
+                    <h3>Website Redesign</h3>
+                    <p>Redesigned a website for a local business using React.js and another using Django </p>
+                    <a href="https://github.com/PeterMwendia/website-redesign">View on GitHub</a>
+                </div>
+
+                <div class="project">
+                    <h3>React Native App</h3>
+                    <p>Built a mobile app using React Native that helps users track their daily water intake.</p>
+                    <a href="https://github.com/PeterMwendia/React-Native">View on GitHub</a>
+                </div>
+
+                <div class="project">
+                    <h3>Data Analysis</h3>
+                    <p>Analyzed a dataset using Python and Jupyter Notebook to identify trends and insights
+                        about customer behavior in a retail store.</p>
+                    <a href="https://github.com/PeterMwendia/Data-analysis">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Machine Learning</h3>
+                    <p></p>
+                    <a href="https://github.com/PeterMwendia/Machine-Learning">View on GitHub</a>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+
+                <div class="skills">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
+                        <li>Swift</li>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>PHP</li>
+                        <li>React Native</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>Scikit-learn</li>
+                        <li>PyTorch</li>
+                        <li>Jupyter Notebook</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Database Management</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+
+                <div class="contact">
+                    <h3>Email</h3>
+                    <p><a href="mailto:ptermwendia@gmail.com">ptermwendia@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="contact">
+                    <h3>Phone</h3>
+                    <p>(+254) 7954-45889</p>
+                </div>
+
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <p>Reach me on social media platforms</p>
+                    <p>
+                        <a href="https://twitter.com/pterarch"><i class="fab fa-twitter"></i>@_pterarch on
+                            Twitter</a><br>
+                        <a href="https://www.linkedin.com/in/peter-mwendia-85a2a6194/"><i class="fab fa-linkedin"></i>
+                            Peter
+                            Mwendia on LinkedIn</a>
+                    </p>
+                </div>
+            </section>
+    </main>
+    <br>
+    <section>
+        <footer>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/peter-mwendia-85a2a6194/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Peter-Mwendia" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/pterarch" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>Copyright © 2023</p>
+        </footer>
+    </section>
+    </div>
+</body>
+
+</html>
